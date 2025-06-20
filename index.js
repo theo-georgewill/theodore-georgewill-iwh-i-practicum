@@ -14,7 +14,6 @@ app.use((req, res, next) => {
 
 const PRIVATE_APP_ACCESS = process.env.PRIVATE_APP_ACCESS; 
 const CUSTOM_OBJECT_TYPE = process.env.CUSTOM_OBJECT_TYPE;
-//const CUSTOM_OBJECT_TYPE = 'p146338661_game_character';
 
 // ✅ ROUTE 1: Homepage - List custom object records
 app.get('/', async (req, res) => {

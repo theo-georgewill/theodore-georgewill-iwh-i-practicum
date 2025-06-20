@@ -1,0 +1,22 @@
+doctype html
+html
+	head
+		title Game Characters
+		link(rel='stylesheet', href='/css/style.css')
+	body
+	h1 Game Characters
+
+	a(href="/update-cobj") Add to this table
+
+	table
+		thead
+			tr
+				th Name
+				th Role
+				th Bio
+		tbody
+			each record in records
+				tr
+					td= record.properties.name
+					td= record.properties.role
+					td= record.properties.bio

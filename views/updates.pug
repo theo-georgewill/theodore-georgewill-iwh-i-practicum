@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1= title
+
+    a(href="/") Return to the homepage
+
+    form(method="POST", action="/update-cobj")
+      div
+        label(for="name") Name:
+        input(type="text", name="name", required)
+
+      div
+        label(for="bio") Bio:
+        textarea(name="bio", rows="4", cols="40", required)
+
+      div
+        label(for="role") Role:
+        input(type="text", name="role", required)
+
+      div
+        button(type="submit") Submit
+
+    br
+    a(href="/") Return to homepage

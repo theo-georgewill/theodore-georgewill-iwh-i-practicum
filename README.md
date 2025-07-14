@@ -1,29 +1,77 @@
-# Welcome to the Integrating With HubSpot I: Foundations Practicum
+# HubSpot IWH Practicum – CRM Integration Project 🚀
 
-This repository is for the Integrating With HubSpot I: Foundations course. This practicum is one of two requirements for receiving your Integrating With HubSpot I: Foundations certification. You must also take the exam and receive a passing grade (at least 75%).
+This repository contains my completed project for the **Integrating With HubSpot I: Foundations** course on HubSpot Academy.
 
-To read the full directions, please go to the [practicum instructions](https://app.hubspot.com/academy/l/tracks/1092124/1093824/5493?language=en).
+It is one of two requirements for earning the **Integrating With HubSpot I: Foundations certification**, alongside passing the official exam (≥ 75%).
 
-**Put your HubSpot developer test account custom objects URL link here:** https://app.hubspot.com/contacts/146338661/objects/144023838/views/all/list
+> ✅ [Course Practicum Instructions](https://app.hubspot.com/academy/l/tracks/1092124/1093824/5493?language=en)
 
+---
 
-___
-## Tips:
-- Commit to your repository often. Even if you make small tweaks to your code, it’s best to be committing to your repository frequently.
-- The subject of the custom object is up to you. Feel free to get creative!
-- Please create a test account and include your private app access token in your repo.
-- Ensure you re-merge any working branches into the main branch.
-- DO NOT ADD YOUR PRIVATE APP TOKEN TO YOUR REPOSITORY. 
+## 🔗 HubSpot Developer Test Account
 
-## Pre-requisites:
-- Using [Node](https://nodejs.org/en/download) and node packages
-- Using [Express](https://expressjs.com/en/starter/installing.html)
-- Using [Axios](https://axios-http.com/docs/intro)
-- Using [Pug templating system](https://pugjs.org/api/getting-started.html)
-- Using the command line
-- Using [Git and GitHub](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+Here is the link to my **custom object** view in my HubSpot developer test account:
 
-## Requirements
-- All work must be your own. During the grading process we will check the revision history. Submissions that do not meet this requirement will not be considered.
-- You must have at least two new routes in your index.js file and one new pug template for the homepage.
-- You must create a developer test account and link to it in your README.md file. Submissions that do not meet this requirement will not be considered.
+➡️ [View Custom Object in HubSpot](https://app.hubspot.com/contacts/146338661/objects/144023838/views/all/list)
+
+---
+
+## ✨ Project Overview
+
+This project demonstrates how to integrate a Node.js/Express web app with the **HubSpot CRM API** using OAuth 2.0 authentication. It includes:
+
+- HubSpot OAuth2 flow
+- Custom object creation and updating
+- Express routes and Pug templates
+- API calls using Axios
+- A simple frontend rendered via Pug
+
+This implementation fulfills the practicum requirements and serves as a live example of HubSpot API integration best practices.
+
+---
+
+## 🧠 Features Implemented
+
+- ✅ OAuth2 authorization flow with HubSpot
+- ✅ 2+ Express routes: homepage, create, update
+- ✅ 1+ Pug templates for rendering views
+- ✅ Custom object records fetched and displayed
+- ✅ Secure `.env` config (no secrets pushed to GitHub)
+
+---
+
+## 🛠 Tech Stack
+
+- **Node.js** – JavaScript runtime
+- **Express.js** – Server framework
+- **Pug** – Templating engine for HTML rendering
+- **Axios** – API calls to HubSpot CRM
+- **Dotenv** – Manage environment variables
+- **Git & GitHub** – Version control and collaboration
+
+---
+
+## ⚙️ Getting Started Locally
+
+Clone this repository and set up your environment:
+
+```bash
+git clone https://github.com/theo-georgewill/hubspot-iwh-practicum.git
+cd hubspot-iwh-practicum
+npm install
+Create a .env file in the root directory with the following variables:
+
+ini
+Copy
+Edit
+HUBSPOT_CLIENT_ID=yourClientId
+HUBSPOT_CLIENT_SECRET=yourClientSecret
+HUBSPOT_REDIRECT_URI=http://localhost:3000/oauth/callback
+Start the app:
+
+bash
+Copy
+Edit
+npm start
+Then open your browser and visit:
+http://localhost:3000/
